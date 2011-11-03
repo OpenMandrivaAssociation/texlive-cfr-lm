@@ -1,3 +1,9 @@
+# revision 19666
+# category Package
+# catalog-ctan /macros/latex/contrib/cfr-lm
+# catalog-date 2010-09-08 11:26:01 +0200
+# catalog-license lppl
+# catalog-version 1.3
 Name:		texlive-cfr-lm
 Version:	1.3
 Release:	1
@@ -955,6 +961,7 @@ Modern.
 %doc %{_texmfdistdir}/source/fonts/cfr-lm/dotprop.etx
 %doc %{_texmfdistdir}/source/fonts/cfr-lm/dottaboldstyle.etx
 %doc %{_texmfdistdir}/source/fonts/cfr-lm/t1-clm.etx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -965,3 +972,5 @@ Modern.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
