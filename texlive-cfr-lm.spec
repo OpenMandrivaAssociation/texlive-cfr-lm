@@ -1,15 +1,15 @@
-# revision 19666
+# revision 33090
 # category Package
-# catalog-ctan /macros/latex/contrib/cfr-lm
-# catalog-date 2010-09-08 11:26:01 +0200
+# catalog-ctan /fonts/cfr-lm
+# catalog-date 2014-03-03 08:32:08 +0100
 # catalog-license lppl
-# catalog-version 1.3
+# catalog-version 1.4
 Name:		texlive-cfr-lm
-Version:	1.3
-Release:	6
+Version:	1.4
+Release:	1
 Summary:	Enhanced support for the Latin Modern fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cfr-lm
+URL:		http://www.ctan.org/tex-archive/fonts/cfr-lm
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.doc.tar.xz
@@ -961,18 +961,3 @@ Modern.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-2
-+ Revision: 750053
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
-+ Revision: 718028
-- texlive-cfr-lm
-- texlive-cfr-lm
-- texlive-cfr-lm
-- texlive-cfr-lm
-- texlive-cfr-lm
-
