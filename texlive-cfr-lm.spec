@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-cfr-lm
 Version:	1.5
-Release:	2
+Release:	3
 Summary:	Enhanced support for the Latin Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cfr-lm
