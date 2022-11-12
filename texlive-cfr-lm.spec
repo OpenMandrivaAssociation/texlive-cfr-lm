@@ -1,19 +1,13 @@
-# revision 33090
-# category Package
-# catalog-ctan /fonts/cfr-lm
-# catalog-date 2014-03-03 08:32:08 +0100
-# catalog-license lppl
-# catalog-version 1.4
 Name:		texlive-cfr-lm
-Version:	1.5
-Release:	3
+Version:	36195
+Release:	1
 Summary:	Enhanced support for the Latin Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cfr-lm
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.r36195.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.doc.r36195.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.source.r36195.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -43,12 +37,12 @@ fonts for mathematics is identical to that provided by Latin
 Modern.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -954,7 +948,8 @@ Modern.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
