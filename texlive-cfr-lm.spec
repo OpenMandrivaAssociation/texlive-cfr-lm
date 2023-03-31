@@ -1,6 +1,6 @@
 Name:		texlive-cfr-lm
 Version:	36195
-Release:	1
+Release:	2
 Summary:	Enhanced support for the Latin Modern fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cfr-lm
