@@ -3,7 +3,7 @@ Version:	36195
 Release:	2
 Summary:	Enhanced support for the Latin Modern fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/cfr-lm
+URL:		https://www.ctan.org/tex-archive/fonts/cfr-lm
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cfr-lm.doc.r%{version}.tar.xz
